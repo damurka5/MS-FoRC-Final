@@ -435,7 +435,8 @@ class Simulator:
                 if t > real_time:
                     time.sleep(t - real_time)
                 elif real_time - t > self.dt:
-                    print(f"Warning: Simulation running slower than real-time by {real_time - t:.3f}s")
+                    pass
+                    #print(f"Warning: Simulation running slower than real-time by {real_time - t:.3f}s")
                     
         except KeyboardInterrupt:
             print("\nSimulation interrupted by user")
